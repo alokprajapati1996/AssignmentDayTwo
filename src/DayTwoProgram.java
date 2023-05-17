@@ -50,8 +50,21 @@ public class DayTwoProgram {
         System.out.println("enter wrong value");
     }
 }
+public static void sumNaturalNumber(){
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter a number");
+        int num=sc.nextInt();
+        int i=1,sum=0;
+        while(i <= num){
+            sum+=i;
+            i++;
+        }
+        System.out.println("sum of natural number : "+sum);
+    }
+
 public static void main(String[] args) {
         digitNumber();
         readSingleDigit();
+        sumNaturalNumber();
     }
 }
