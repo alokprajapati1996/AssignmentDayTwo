@@ -96,6 +96,23 @@ public static void reverseUsedWithFor(){
     }
         System.out.println("revese no. is :"+sum);
 }
+public static void palindrome() {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter a value");
+    int num = sc.nextInt();
+    int sum = 0;
+    int temp = num;
+    while (num > 0) {
+        int rem = num % 10;
+        sum = sum * 10 + rem;
+        num = num / 10;
+    }
+    if (sum == temp) {
+        System.out.println("Given number is palindrome");
+    } else {
+        System.out.println("number is not palindrme");
+    }
+}
 
 public static void main(String[] args) {
         digitNumber();
@@ -104,6 +121,7 @@ public static void main(String[] args) {
         printRevers();
     sumNaturalNumberWithForLoop();
     reverseUsedWithFor();
+    palindrome();
 
     }
 }
