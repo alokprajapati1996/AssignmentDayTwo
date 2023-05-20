@@ -100,9 +100,19 @@ System.out.print("Enter the value of c: ");
       System.out.println("The roots are  r2= " + r2 );
 
     }
-    public static void main(String[] args) {
+    public static void distance(int x,int y) {
+        double distance = Math.sqrt(x*x+y*y);
+        System.out.println("Distance from (0, 0) to (" +
+                x + ", " + y + ") is " +
+                distance);
 
+    }
+    public static void main(String[] args) {
         checkVowels();
         printMonth();
+        quadraticRoots();
+        int x = Integer.parseInt(args[0]);
+        int y = Integer.parseInt(args[1]);
+        distance(x,y);
     }
 }
