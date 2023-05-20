@@ -1,5 +1,5 @@
 package com.brigelabz.program;
-
+import java.util.Scanner;
 public class Program {
     public static void checkVowels() {
         char ch = 'O';
@@ -84,7 +84,23 @@ public class Program {
         }
         System.out.println(monthString);
     }
-public static void main(String[] args) {
+  public static void quadraticRoots(){
+    Scanner input = new Scanner(System.in);
+System.out.print("Enter the value of a: ");
+    double a = input.nextDouble();
+System.out.print("Enter the value of b: ");
+    double b = input.nextDouble();
+System.out.print("Enter the value of c: ");
+    double c = input.nextDouble();
+    double delta= b * b - 4 * a * c;
+
+        double r1 = (-b + Math.sqrt(delta)) / (2 * a);
+        double r2 = (-b - Math.sqrt(delta)) / (2 * a);
+        System.out.println("The roots are r1= " + r1);
+      System.out.println("The roots are  r2= " + r2 );
+
+    }
+    public static void main(String[] args) {
 
         checkVowels();
         printMonth();
